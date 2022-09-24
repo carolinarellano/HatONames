@@ -34,6 +34,7 @@ int main(int argc, char *argv[])
 
     for(int i = 0; i < 26; i++)
     {
+        printf("> ");
         int choice = fgetc(stdin);
         fgetc(stdin);
 
@@ -53,7 +54,12 @@ int main(int argc, char *argv[])
         rewind(descriptor_de_archivo);
     }
 
-    printf("No more names in the hat");
+    printf(">> No more names in the hat :(\n");
+    printf("\nHat of names by:\n"
+           "    Carolina Arellano\n"
+           "    Daniela Arreola\n"
+           "    Arlyn Medina\n"
+           "    and Renata Tejeda\n");
 
     return 0;
 }
